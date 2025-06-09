@@ -187,16 +187,16 @@ function App() {
   }
 
   const quadrantInfo: Record<string, QuadrantInfo> = {
-    '0-0': { label: '1. Quick Wins / Must-Dos', bgColor: 'bg-green-50/70' },
-    '0-1': { label: '2. Strategic Investments', bgColor: 'bg-blue-50/70' },
-    '0-2': { label: '3. Long-Term Bets', bgColor: 'bg-purple-50/70' },
-    '1-0': { label: '4. Good Candidates', bgColor: 'bg-teal-50/70' },
-    '1-1': { label: '5. Evaluate Further', bgColor: 'bg-orange-50/70' },
-    '1-2': { label: '6. Reconsider / Park', bgColor: 'bg-red-50/70' },
-    '2-0': { label: '7. Low Priority (Easier)', bgColor: 'bg-gray-50/70' },
-    '2-1': { label: '8. Low Priority (Moderate)', bgColor: 'bg-gray-100/70' },
-    '2-2': { label: '9. Avoid / Sunset', bgColor: 'bg-gray-200/70' },
-  };
+  '0-0': { label: '1. High Impact, High Feasibility', bgColor: 'bg-green-50/70' },
+  '0-1': { label: '2. High Impact, Medium Feasibility', bgColor: 'bg-blue-50/70' },
+  '0-2': { label: '3. High Impact, Low Feasibility', bgColor: 'bg-purple-50/70' },
+  '1-0': { label: '4. Medium Impact, High Feasibility', bgColor: 'bg-teal-50/70' },
+  '1-1': { label: '5. Medium Impact, Medium Feasibility', bgColor: 'bg-orange-50/70' },
+  '1-2': { label: '6. Medium Impact, Low Feasibility', bgColor: 'bg-red-50/70' },
+  '2-0': { label: '7. Low Impact, High Feasibility', bgColor: 'bg-gray-50/70' },
+  '2-1': { label: '8. Low Impact, Medium Feasibility', bgColor: 'bg-gray-100/70' },
+  '2-2': { label: '9. Low Impact, Low Feasibility', bgColor: 'bg-gray-200/70' },
+};
 
   // Group opportunities by quadrant key using the category mappings
   const groupedOpportunities = opportunities.reduce((acc: Record<string, AiOpportunity[]>, op) => {
